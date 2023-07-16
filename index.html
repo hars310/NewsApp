@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <title>MyNewsApp</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>MyNewsApp</h2>
+        </div>
+        <div class="searchbar">
+            <input id="search-input" type="text" class="search-input" placeholder="e.g. Web Dev">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li class="nav-item"  id="sports" onclick="onNavItem('sports')">
+                 Sports</li>
+                <li  class="nav-item" id="finance" onclick="onNavItem('finance')">Finance</li>
+                <li  class="nav-item" id="tech" onclick="onNavItem('tech')">Tech</li>
+                <li  class="nav-item" id="politics" onclick="onNavItem('politics')">Politics</li>
+                <a href="#" id="close"><i class="ri-close-fill"></i></a>
+                </ul>
+        </div>
+        <div class="mobile">
+            <i id="bar" class="ri-menu-line"></i>
+    
+          </div>
+    </nav>
+    <main>
+        <div class="card-container" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">This is title</h2>
+                <h5 class="news-source" id="news-source">End gadget</h5>
+                <p class="news-details " id="news-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, et!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
