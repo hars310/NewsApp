@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 nav{
-    width: auto;
+    /* width: 100vw; */
     height: 10vh;
     background-color:#feffff ;
     display: flex;
@@ -89,18 +89,19 @@ main{
 }
 .card-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 20px;
     align-items: start;
 }
 .card{
-    width: 360px;
+    width: 320px;
     min-height: 400px;
     box-shadow: 0 0  4px #d4ecff;
     overflow: hidden;
     cursor: pointer;
     border-radius: 6px;
+    margin: 0 6px;
 
 }
 .card:hover{
@@ -156,7 +157,7 @@ margin-block: 12px;
         
     }
     .mobile i{
-        padding: 10px;
+        padding-left: 10px;
         font-size: 28px;
         color: #333;
         cursor: pointer;
