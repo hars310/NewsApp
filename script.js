@@ -18,6 +18,10 @@ async function collectNews(query) {
 
 
 function bindData(articles) {
+     if (!Array.isArray(articles)) {
+        console.error("Invalid data format");
+        return;
+    }
     // Sort articles by publishedAt date in descending order (latest to oldest)
     articles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
     
